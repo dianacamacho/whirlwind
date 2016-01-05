@@ -14,11 +14,12 @@ end
 puts "Can Sam make crepes?"
 sam_crepes = gets.chomp.downcase
 
-puts "Can Sally spreak French?"
+puts "Can Sally speak French?"
 sally_language = gets.chomp.downcase
   
 if sam_crepes == "yes" || sally_language == "yes"
   puts "Sam should marry sally"
 else
-  puts "Sam has been friend-zoned"
+  puts "Sam is in the friend-zone"
 end
+
