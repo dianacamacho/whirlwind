@@ -28,3 +28,16 @@ accounts.each do |hash|
   puts "ACCT #: #{hash[:account_number]}"
   puts "--------------"
 end
+
+puts "Enter your account number"
+account_input = gets.chomp
+
+
+accounts.each do |hash|
+  if hash.has_value?(account_input)
+    puts "FIRST NAME: #{hash[:first_name]}"
+    puts "LAST NAME: #{hash[:last_name]}"
+    puts "EMAIL: #{hash[:email]}"
+    puts "ACCT #: #{hash[:account_number]}"
+  end
+end
