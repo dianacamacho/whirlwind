@@ -1,6 +1,6 @@
 accounts = []
 
-2.times do
+5.times do
 
   account_hash ={}
 
@@ -21,7 +21,6 @@ accounts = []
         puts "please try entering email address again"
         email_address = gets.chomp
         account_hash[:email] = email_address
-
       end
     end
 
