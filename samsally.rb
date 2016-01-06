@@ -5,10 +5,9 @@ puts "How many languages does Sally speak?"
 sally_languages = gets.chomp.to_i
 
 if sam_recipes > 10 && sally_languages > 5
-  puts "Sam should date sally"
+  puts "Sam should date Sally"
 else
   puts "Sam needs to find another girl"
-
 end
 
 puts "Can Sam make crepes?"
@@ -18,8 +17,8 @@ puts "Can Sally speak French?"
 sally_language = gets.chomp.downcase
   
 if sam_crepes == "yes" || sally_language == "yes"
-  puts "Sam should marry sally"
+  puts "Sam should marry Sally"
 else
-  puts "Sam is in the friend-zone"
+  puts "Sam needs to find another girl"
 end
 
