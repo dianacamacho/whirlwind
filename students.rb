@@ -1,18 +1,26 @@
 students = []
+name = nil
 
-while true 
-  p "enter name of student:"
-  student_name = gets.chomp
-  students << student_name
-   if student_name == ""
-    break
-  end
+while name != "" 
+  puts "enter name of student, press enter when done:"
+  name = gets.chomp
+  students << name unless name == ""
 end
 
-students.delete("")
+shuffled_names = students.shuffle!
 
-p students
+number_of_students = shuffled_names.size
+loop_times = number_of_students / 2
 
+loop_times.times do 
+  if shuffled_names.size != 3
+    group_names = shuffled_names.shift(2)
+    puts "Group: #{group_names[0]}, #{group_names[1]}"
+  else
+    group_names = shuffled_names.shift(3)
+    puts "Group: #{group_names[0]}, #{group_names[1]}, #{group_names[2]}"
+  end
+end
 
 
 
