@@ -1,7 +1,7 @@
 students = []
 name = nil
 x = 0
-p "enter 'done' when done"
+#p "enter 'done' when done"
 
 while name != "" 
   p "enter student names"

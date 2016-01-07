@@ -13,6 +13,8 @@ accounts = []
   puts "Please enter an email address"
   email_address = gets.chomp
 
+  # /\.com/
+
     while true
       if
         email_address.include?("@") && email_address.end_with?(".com", ".edu", ".net")
